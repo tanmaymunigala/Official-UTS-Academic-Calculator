@@ -58,7 +58,7 @@ namespace Official_UTS_Academic_Calculator
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            calculateWAM();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -77,6 +77,21 @@ namespace Official_UTS_Academic_Calculator
         private void deleteTableRow()
         {
 
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            setTableRows();
+        }
+        private void setTableRows()
+        {
+
+        }
+        private Double calculateWAM()
+        {
+            Double wam = 0.0;
+            wam = wam + ((Double.Parse(textBox3.Text) * Double.Parse(textBox4.Text) + Double.Parse(textBox6.Text) * Double.Parse(textBox7.Text) + Double.Parse(textBox9.Text) * Double.Parse(textBox10.Text) + Double.Parse(textBox12.Text) * Double.Parse(textBox13.Text)) / (Double.Parse(textBox4.Text) + Double.Parse(textBox7.Text) + Double.Parse(textBox10.Text) + Double.Parse(textBox13.Text)));
+            label6.Text = wam.ToString();
+            return wam;
         }
     }
 }
