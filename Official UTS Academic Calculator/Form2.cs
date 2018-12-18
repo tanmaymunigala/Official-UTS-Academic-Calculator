@@ -30,5 +30,15 @@ namespace Official_UTS_Academic_Calculator
             this.Close();
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
